@@ -1,6 +1,3 @@
-async-generator @ file:///home/ktietz/src/ci/async_generator_1611927993394/work
-async-timeout==4.0.3
-attrs @ file:///tmp/build/80754af9/attrs_1604765588209/work
 dj-database-url==2.1.0
 Django==4.1.12
 django-admin-soft-dashboard==1.0.12
@@ -8,50 +5,15 @@ django-cors-headers==4.3.0
 django-extensions==3.2.3
 djangorestframework==3.14.0
 gunicorn==21.2.0
-h5py==3.8.0
-
-
-importlib-metadata==6.8.0
-importlib-resources==5.12.0
-
-jdcal==1.4.1
-
-joblib==1.2.0
 json5==0.9.5
-
 openai==0.28.1
-
+pathlib==1.0.1
 panel==1.2.3
 param==1.13.0
 paramz==0.9.5
 parso==0.7.0
-
 pipenv==2023.10.20
 pkginfo==1.7.0
-platformdirs==3.11.0
-
-prometheus-client @ file:///tmp/build/80754af9/prometheus_client_1618088486455/work
-prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1616415428029/work
-
-pyrsistent @ file:///opt/concourse/worker/volumes/live/ff11f3f0-615b-4508-471d-4d9f19fa6657/volume/pyrsistent_1600141727281/work
-PySocks @ file:///opt/concourse/worker/volumes/live/85a5b906-0e08-41d9-6f59-084cee4e9492/volume/pysocks_1594394636991/work
-pytest==6.2.3
-python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
 python-dotenv==1.0.0
-python-jsonrpc-server @ file:///tmp/build/80754af9/python-jsonrpc-server_1600278539111/work
-python-language-server @ file:///tmp/build/80754af9/python-language-server_1607972495879/work
 shap==0.42.1
-statannot==0.2.3
-statsmodels @ file:///opt/concourse/worker/volumes/live/f55add71-53cb-4510-4c08-7ae9e294a482/volume/statsmodels_1614023740731/work
-sympy @ file:///opt/concourse/worker/volumes/live/0bf7d347-8399-4af8-5e6f-4267d4aabdd9/volume/sympy_1618255318469/work
-tables==3.6.1
-tabulate==0.8.10
-tblib @ file:///tmp/build/80754af9/tblib_1597928476713/work
-terminado==0.9.4
-typer==0.3.2
-typing-extensions==4.5.0
-uc-micro-py==1.0.2
-ujson @ file:///opt/concourse/worker/volumes/live/b4182deb-c6ce-4bc8-7783-61027c162049/volume/ujson_1611259506235/work
-unicodecsv==0.14.1
-urllib3 @ file:///tmp/build/80754af9/urllib3_1615837158687/work
 virtualenv==20.24.6
