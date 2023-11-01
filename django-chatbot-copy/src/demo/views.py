@@ -13,9 +13,6 @@ def index(request):
 def plan(request):
     return render(request, "plan.html")
 
-def actiongrid(request):
-    return render(request, "actiongrid.html")
-
 def chat_gpt(request):
     
     response = get_chat_response(request.GET.get('input'))
