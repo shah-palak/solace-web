@@ -1,5 +1,5 @@
 dj-database-url==2.1.0
-Django==4.1.12
+Django>=4.1
 django-admin-soft-dashboard==1.0.12
 django-cors-headers==4.3.0
 django-extensions==3.2.3
