@@ -8,10 +8,6 @@ gunicorn==21.2.0
 json5==0.9.5
 openai==0.28.1
 pathlib==1.0.1
-panel==1.2.3
-param==1.13.0
-paramz==0.9.5
-parso==0.7.0
 pipenv==2023.10.20
 pkginfo==1.7.0
 python-dotenv==1.0.0
