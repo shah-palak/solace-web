@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>STI Health Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(233, 165, 208);
+            background: linear-gradient(90deg, rgba(241, 138, 203, 1) 33%, rgba(123, 251, 244, 1) 100%);
+        }
+
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            font-style: italic;
+            font-size: large;
+            color: #b852cc;
+            margin-bottom: 20px;
+        }
+
+        .chat-box {
+            height: 300px;
+            overflow-y: scroll;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .message {
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .message.received {
+            background-color: #f2f2f2;
+        }
+
+        .message.sent {
+            background-color: #e2f2ff;
+        }
+
+        .chat-input {
+            display: flex;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column justify-content-center" style="min-height: 100vh;">
+  <div class= "header"><h1><u>Solace</u></h1></div>
+    
+        <div class="chat-container">
+            
+            <div class="chat-box" id="chat-box">
+                <div class="message received"> Hi, I'm Solace. I’m here to help you with any
+                    questions or concerns you may have about sexual health. Just a reminder, everything you share with me
+                    is completely confidential. If at any point you feel uncomfortable or want to end the conversation,
+                    please let me know. How can I assist you today?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+            </div>
+            <button id="send-btn" class="btn btn-primary mt-3">Send</button>
+            <a href="http://127.0.0.1:8000/plan" class="btn btn-primary mt-3">Take me to my action plan!</a>
+        </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var sendBtn = document.getElementById("send-btn");
+            var userInput = document.getElementById("user-input");
+            var chatBox = document.getElementById("chat-box");
+
+            sendBtn.addEventListener("click", function () {
+                var message = userInput.value.trim();
+                if (message !== "") {
+                    appendMessage(message, "sent");
+                    userInput.value = "";
+                    scrollToBottom();
+                    // TODO: Handle user message and generate bot response
+                    $.ajax({
+                        url: "http://127.0.0.1:8000/chat_gpt/?input=" + message,
+                        type: 'GET',
+                        dataType: 'json', // added data type
+                        success: function (res) {
+                            console.log(res);
+                            // alert(res);
+                            appendMessage(res, "received");
+                        }
+                    });
+                }
+            });
+
+            function appendMessage(message, type) {
+                var messageElement = document.createElement("div");
+                messageElement.classList.add("message", type);
+                messageElement.innerText = message;
+                chatBox.appendChild(messageElement);
+            }
+
+            function scrollToBottom() {
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        });
+
+    </script>
+</body>
+
+</html>

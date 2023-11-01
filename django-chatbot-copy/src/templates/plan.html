@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Action Plan</title>
+    <style>
+      body {
+        color: white;
+      }
+      .container img {
+        object-fit: contain;
+      }
+      .smallstep {
+      margin: 10px 0;
+        }   
+
+      .step {
+          margin: 20px 0;
+            }      
+
+      .largestep {
+          margin: 50px 0;
+            } 
+      .small {
+          font-size: 14px
+        }
+      .medium {
+          font-size: 16px
+        }
+      .large {
+          font-size: 20px
+        }
+      .indented-text {
+                padding-left: 20px;
+              }
+      
+        /* Please keep the custom styles here */
+    </style>
+</head>
+<body class="bg-gradient" style="background: linear-gradient(90deg, rgba(241,138,203,1) 33%, rgba(123,251,244,1) 100%);">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1>Your Action Plan</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Left Column -->
+                <div class="chat-container rounded p-3 mb-5" style="background-color: #b852cc;">
+                    <h4> What brought you here today: </h4>
+                    <div class="step">"I think I might be infected but I don't know who to talk to"</div>
+                </div>
+
+                <div class="chat-container rounded p-3 mb-5" style="background-color: #561278;">
+                    <h4>A step-by-step plan:</h4>
+                    <div class="step">1. Get and take a pregnancy test from nearby pharmacy or community health clinic</div>
+                    <div class="step">2. Get tested for STIs </div>
+                    <div class="indented-text">
+                      <div class="small" class = "smallstep" > - Syphilis, Chlamydia, Hepatitis C, etc. </div>
+                      <div class = "smallstep"></div>
+                      <div class="small" class = "smallstep" > - If positive, communicate results with previous sexual partners  </div>
+                    </div>
+                    <div class="step">3. Visit a provider to discuss your STI & pregnancy test results</div>
+                    <div class="indented-text">
+                    <div class="small" class = "smallstep" > - If pregnant, bring up congenital syphilis </div>
+                    <div class = "smallstep"></div>
+                    <div class="small" class = "smallstep" > - Discuss next steps, in terms of treatment and routine screening </div>
+                    </div>
+                    <div class="step">4. Consider confiding in a trusted friend or partner </div>
+                    <div class="indented-text">
+                      <div class="small" class = "smallstep" > - It can help you feel supported as you navigate this stressful situation </div>
+                      </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Middle Column -->
+                <div class="chat-container rounded p-3 mb-5" style="background-color: #b852cc;">
+                    <div class="chat-header">
+                        <h4>Based on what you shared, you may want to look out for:</h4>
+                        <div class="large" class="step"> 1. Syphilis</div>
+                        <div class="indented-text">
+                          <div class="small">
+                          <div class = "smallstep" class="small"> - A curable bacterial infection that can be contracted during sexual intercourse. </div>
+                          <div class = "smallstep" class="small"> - Can be transmitted congenitally to children. </div>
+                          <div class = "smallstep" class="small"> - Key symptom: painless sores </div></div></div>
+                          
+                        <div class="large" class="step"> 2. Chlamydia </div>
+                        <div class="indented-text">
+                          <div class="small">
+                          <div class = "smallstep" class="small"> - A common STI, characterized by genital or occular symptoms. </div>
+                          <div class = "smallstep" class="small"> - It can often be asymptomatic, so routine testing is recommended. </div>
+                          <div class = "smallstep" class="small"> - High prevalence in your area </div></div>
+                        </div>
+                    </div>
+                    <div class="chat-box" id="chat-box">
+                        <!-- Chat messages go here -->
+                    </div>
+                </div>
+
+                <div class="chat-container rounded p-3 mb-5" style="background-color: #b852cc;">
+                  <h4> Insights from our conversation: </h4>
+                  <div class="medium">
+                    <div class="smallstep">1. Self-testing might be a good option.</div>
+                  </div>
+                    <div class="indented-text">
+                      <div class="small"> - It might help with some of the anxiety of going to a testing facility </div></div>
+                      <div class="medium">
+                        <div class="smallstep">2. It may help to reach out to your sexual partner and ask if they've noticed any STI symptoms or were confirmed positive</div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Right Column -->
+                <div class="chat-container rounded p-3 mb-5" style="background-color: #561278;">
+                    <h4> Places to find support nearest to you: </h4>
+                    <img class = "container img" src="https://maps.googleapis.com/maps/api/staticmap?center=Tempe,AZ&zoom=13&size=400x300&maptype=roadmap&markers=color:red%7Clabel:1%7C33.41298057449371,-111.94192341695803&markers=color:red%7Clabel:2%7C33.41452996069049,-111.92588018997469&key=AIzaSyAMN3OqPW24e1L5pUxjmMZ2Di1akpvaDTY">
+                    <br></br>
+                    <div class="large" class="smallstep">1. Be Well Family Care </div>
+                    <div class="indented-text">
+                      <div class="small">
+                        <div class="smallstep">1492 S Mill Ave Tempe, Arizona 85281</div>
+                        <div class="smallstep">(480)-410-4128</div>
+                      </div>
+                    </div>
+                    <div class="large" class="smallstep">2. CVS MinuteClinic </div>
+                    <div class="indented-text">
+                      <div class="small">
+                        <div medium class="smallstep">909 E Apache Blvd Tempe, Arizona 85281</div>
+                        <div medium class="smallstep">(866)-389-2727</div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="chat-container rounded p-3 mb-5" style="background-color: #561278;">
+                    <h4> Some Useful Links and Resources: <h4>
+                      <div class = "medium">
+                    <div class="smallstep"><a href="https://www.ncshguide.org/provider-visit/how-do-i-bring-up-the-topic">1. How To Talk With Your Provider About Your Sexual Health </a></div>
+                    <div class="smallstep"><a href="https://www.cdc.gov/std/treatment/syphilis-screenings.htm">2. Prenatal Syphilis Screening Guidelines By State</a></div>
+                  </div>
+                  </div>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+            <a href="http://127.0.0.1:8000/index"><button class="btn btn-primary" style="margin-right: 10px;">Start Over</button></a>
+            <button id="save-pdf-btn" class="btn btn-primary" style="margin-right: 10px;">Save as PDF</button>
+            <a href="http://127.0.0.1:8000/"><button class="btn btn-primary">Exit</button></a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.0/html2canvas.min.js"></script>
+    <script>
+        window.jsPDF = window.jspdf.jsPDF;
+        document.addEventListener("DOMContentLoaded", function() {
+            // ... Your existing code
+
+            // Adding functionality to the "Save as PDF" button
+            document.getElementById('save-pdf-btn').addEventListener('click', function () {
+                // Use html2canvas to capture the screen as an image
+                html2canvas(document.body).then(function(canvas) {
+                    var imgData = canvas.toDataURL('image/png');
+
+                    // Set the size of the PDF document to the size of the captured screen
+                    var imgWidth = 210; // mm
+                    var pageHeight = imgWidth * canvas.height / canvas.width;
+                    var doc = new jsPDF('p', 'mm', 'a4');
+                    var position = 0;
+
+                    // Add the captured image to the PDF
+                    doc.addImage(imgData, 'PNG', 0, position, imgWidth, pageHeight);
+
+                    // Save the PDF document
+                    doc.save('app_screen.pdf');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
