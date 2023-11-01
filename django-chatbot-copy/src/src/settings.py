@@ -34,7 +34,7 @@ TEMPLATE_DIR = BASE_DIR / "templates"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://solace-w4a8.onrender.com']
 
 
 # Application definition
