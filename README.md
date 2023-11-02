@@ -8,8 +8,11 @@ Backend: Django, OpenAI <br />
 Frontend: HTML, jQuery (Ajax), CSS, Bootstrap
 
 ## To run the project
+Visit Demo Site:
+https://solace-w4a8.onrender.com/
 
-Please follow the following prompts (OpenAI key unable to be shared publicly, so demo conversation coded for judges)
+(OpenAI key unable to be shared publicly, so demo conversation coded for judges)
+Please follow the following prompts:
 
 	1.	“I’m really scared I might have an infection but i don't know who to talk to"
    
