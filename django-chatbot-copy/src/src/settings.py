@@ -34,12 +34,7 @@ TEMPLATE_DIR = BASE_DIR / "templates"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
-
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('https://solace-w4a8.onrender.com')
-
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+ALLOWED_HOSTS = ['solace-w4a8.onrender.com']
 
 
 # Application definition
