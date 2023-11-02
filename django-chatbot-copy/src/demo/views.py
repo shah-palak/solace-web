@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .chat_gpt import get_chat_response
 from django.http import HttpResponse
 import json
-from src.demo.models import STI
+from demo.models import STI
 
 # Create your views here.
 
